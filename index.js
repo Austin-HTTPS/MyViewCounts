@@ -45,7 +45,7 @@ app.post('/create', (req, res) => {
 			});
 			if (!req.body.stroke) console.log(`New Basic Counter ${countername}`);
 			if (req.body.stroke) console.log(`New Advanced Counter ${countername}`);
-			res.end(`Successful.\nVisit your counter at: https://myviewcounts.rayhanadev.repl.co/viewcount/${countername}.svg`);
+			res.end(`Successful.\nVisit your new counter at: https://myviewcounts.rayhanadev.repl.co/viewcount/${countername}.png`);
 		} else {
 			res.end('Missing a field. Unsuccessful.');
 		}
